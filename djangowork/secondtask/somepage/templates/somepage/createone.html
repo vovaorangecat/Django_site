@@ -1,0 +1,27 @@
+{% extends 'somepage/base.html' %}
+
+
+{% block css %}
+    <link href="/static/vendor/css/index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h1 style="color:orange">
+                    Сайт-Книгарня в якому ви можете знайти книги які вам точно сподобаються
+                </h1>
+                <button id="start-purchase-btn" type="button" class="btn btn-lg">
+                    <a id="start-purchase-link" href="{% url 'createtwo' %}">
+                        Переглянути каталог
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
